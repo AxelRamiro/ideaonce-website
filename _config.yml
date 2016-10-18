@@ -8,6 +8,7 @@ collections:
   images:
     title: Images
     output: false
+    alt: jvjkhvj
   posts:
     title: Posts
     output: true
