@@ -1,15 +1,27 @@
 ---
 title: Ideaonce
+timezone: UTC
+collections:
+  clients:
+    title: Clients
+    output: false
+  posts:
+    title: Posts
+    output: true
+  solutions:
+    title: Solutions
+    output: false
+  uploads:
+    title: Uploads
+    output: true
 email: your-email@domain.com
-description: |
-  Creamos soluciones adaptadas a tus necesidades
+description: 'Creamos soluciones adaptadas a tus necesidades
+
+'
 baseurl: ''
 url: ''
 twitter_username: jekyllrb
 github_username: jekyll
-collections:
-  solutions:
-  clients: 
 markdown: kramdown
 theme: minima
 gems:
