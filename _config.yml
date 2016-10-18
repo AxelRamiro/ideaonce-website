@@ -5,6 +5,9 @@ collections:
   clients:
     title: Clients
     output: false
+  images:
+    title: Images
+    output: true
   posts:
     title: Posts
     output: true
