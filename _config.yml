@@ -1,6 +1,6 @@
 ---
 title: Ideaonce
-timezone: UTC
+timezone: America/Mexico_City
 collections:
   clients:
     title: Clients
@@ -22,8 +22,8 @@ email: your-email@domain.com
 description: 'Creamos soluciones adaptadas a tus necesidades
 
 '
-baseurl: ''
-url: ''
+baseurl: 
+url: 
 twitter_username: jekyllrb
 github_username: jekyll
 markdown: kramdown
