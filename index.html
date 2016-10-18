@@ -1,0 +1,66 @@
+---
+layout: home
+---
+
+<section>
+  <div class="hero-img"><img class="hero-img__image" src="/img/home-cabecera.png">
+    <div class="text-box text--center">
+      <h2 class="text--hero text--light anima">Aportamos </h2>
+      <h2 class="text--hero-2 text--bold text--light anima">soluciones de valor </h2>
+      <h2 class="text--hero text--light anima">para consolidar la competitividad de las organizaciones.</h2></div>
+    <div class="scroll anima"><a><span></span><span></span><span></span></a></div>
+  </div>
+</section>
+
+<section class="section--white">
+  <div class="container--small container--padding-top">
+    <h2 class="heading-1 text--center text--accent">Ideaonce</h2>
+    <br>
+    <p class="text text--primary text--justify ideaonce">Somos una empresa que asume la responsabilidad de consolidar la competitividad de las organizaciones. Como parte de este esfuerzo, ofrecemos los servicios de consultoría y capacitación dirigidos al desarrollo de soluciones de valor traducidas en acciones
+      concretas y que ayuden a nuestros clientes a obtener ventajas competitivas en su ramo de especialidad.</p>
+    <div class="container--padding-top"></div>
+  </div>
+</section>
+
+<section class="section--light">
+  <div class="container container--padding-top text--center">
+    <h2 class="heading-1 text--accent">Soluciones</h2><a class="heading-3 text--primary" href="solutions.html">Ver todas</a>
+    <br>
+    <br>
+    {% for solution in site.solutions %}
+    <div class="half">
+      <div class="hero-img hero-img--small"><img class="hero-img__image" src={{ solution.image-path }}></div>
+    </div>
+    <div class="half last text--left">
+      <br>
+      <h2 class="heading-2 text--primary">{{ solution.title }}</h2>
+      <br>
+      {{ solution.content }}
+      <br>
+      <h2 class="more" id="planea" onclick="more(event)">+</h2>
+      <h2 class="more" id="planeac" onclick="less(event)">-</h2>
+      <div class="planeacion">
+        <p class="text text--primary">{{ soltion.hidden-text }}</p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  <section class="section--light">
+    <div class="container--margin-top"></div>
+  </section>
+  {% include banner.html %}
+  <section class="section--light">
+    <div class="container container--padding-top text--center">
+      <h2 class="heading-1 text--accent">Algunos de nuestros clientes</h2>
+      <br>
+      <br>
+      <div class="scrollflow -slide-top -opacity">
+        {% for client in site.clients %}
+        <div class="one-sixth">
+          <div class="logo logo--client"><img class="logo__img" src="{{ client.image-path }}"></div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+</section>

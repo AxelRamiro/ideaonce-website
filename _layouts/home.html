@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="utf-8">
+  <title>Ideaonce</title>
+  <link rel="stylesheet" href="style/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Istok+Web:400,400i" rel="stylesheet">
+</head>
+
+<body>
+  <div class="toggle-button" id="hamburger">
+    <div class="wrapper">
+      <div class="menu-bar menu-bar-top"></div>
+      <div class="menu-bar menu-bar-middle"></div>
+      <div class="menu-bar menu-bar-bottom"></div>
+    </div>
+  </div>
+  <nav>
+    <ul>
+      <li><a class="animam" href="/">Home</a></li>
+      <li><a class="animam" href="about.html">Nosotros</a></li>
+      <li><a class="animam" href="solutions.html">Soluciones</a></li>
+      <li><a class="animam" href="contact.html">Contacto</a></li>
+      <li>
+        <a class="logo logo--small animam"><img class="logo__img" src="/img/icons/idea-icono.png"></a>
+      </li>
+    </ul>
+  </nav>
+  <div id="contentLayer">
+    <header>
+      <div class="container--header">
+        <a class="logo" href="/"><img class="logo__img" src="/img/logos/idea-logo.png"></a>
+      </div>
+    </header>
+
+    {{ content }}
+
+    {% include footer.html %}
+
+  </div>
+  <script src="scripts/more.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="scripts/menu.js"></script>
+  <script src="scripts/vendor/eskju.jquery.scrollflow.js"></script>
+  <script src="scripts/animation.js"></script>
+</body>
+
+</html>

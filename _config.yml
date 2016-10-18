@@ -1,0 +1,19 @@
+---
+title: Ideaonce
+email: your-email@domain.com
+description: |
+  Creamos soluciones adaptadas a tus necesidades
+baseurl: ''
+url: ''
+twitter_username: jekyllrb
+github_username: jekyll
+collections:
+  solutions:
+  clients: 
+markdown: kramdown
+theme: minima
+gems:
+- jekyll-feed
+exclude:
+- Gemfile
+- Gemfile.lock
